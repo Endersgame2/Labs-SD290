@@ -5,20 +5,37 @@
 // Now its reversed string So I will convert it back to string 
 // last and if condition to check if they are palandrome
 
-Console.WriteLine("Please Enter a String to check palandrome");
-string userInput = Console.ReadLine();
-char[] inputToChar = userInput.ToCharArray();
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-// I took array.reverse from stackOverflow as a refrence
-Array.Reverse(inputToChar);
-string reversedArr = new string(inputToChar);
-
-
-if (userInput.Equals(reversedArr))
+namespace lab_1
 {
-    Console.WriteLine("Its a Plandrome!!! Yeah");
-}
-else
-{
-    Console.WriteLine("Oof !! its not a palandrome");
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Please Enter a String to check palandrome");
+            string userInput = Console.ReadLine();
+            char[] inputToChar = userInput.ToCharArray();
+
+            // I took array.reverse from stackOverflow as a refrence
+            Array.Reverse(inputToChar);
+            string reversedArr = new string(inputToChar);
+
+
+            if (userInput.Equals(reversedArr))
+            {
+                Console.WriteLine("Its a Plandrome!!! Yeah");
+            }
+            else
+            {
+                Console.WriteLine("Oof !! its not a palandrome");
+            }
+
+        }
+    }
 }
