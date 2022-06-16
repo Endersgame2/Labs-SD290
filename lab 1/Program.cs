@@ -25,16 +25,16 @@ namespace lab_1
             int count = 0;
             int perecentage = 0;
 
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (ch == arr[i])
-                { 
-                    count++;
-                }else
-                {
-                    perecentage++;
-                }
-            }
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    if (ch == arr[i])
+            //    { 
+            //        count++;
+            //    }else
+            //    {
+            //        perecentage++;
+            //    }
+            //}
 
             Console.WriteLine($" The Letter '{ch}' appeared {count} times in the array. This letter make up {perecentage} of the total number of Characters.");
 
